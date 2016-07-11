@@ -1,0 +1,32 @@
+{
+  "name": "pdfjs-viewer",
+  "main": "./lib/pdfjs-viewer.js",
+  "version": "0.0.0",
+  "description": "Open pdfs inside atom, with the default viewer of mozilla's pdf.js project.",
+  "repository": "https://github.com/AljoschaMeyer/pdfjs-viewer",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
+    "fs-plus": "^2.9.1"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "xo": {
+    "space": true,
+    "esnext": true,
+    "globals": [
+      "atom",
+      "document"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": 0
+    }
+  },
+  "devDependencies": {
+    "xo": "^0.16.0"
+  }
+}
